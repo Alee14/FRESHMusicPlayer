@@ -210,7 +210,7 @@ namespace FRESHMusicPlayer.Pages
 
         private async void Updates_CheckUpdatesButton_Click(object sender, RoutedEventArgs e)
         {
-            await UpdateHandler.UpdateApp(forceUpdate:true);
+            //await UpdateHandler.UpdateApp(forceUpdate:true);
             InitFields();
         }
 

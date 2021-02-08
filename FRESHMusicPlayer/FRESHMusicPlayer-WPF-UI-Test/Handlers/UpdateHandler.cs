@@ -1,6 +1,6 @@
 ﻿using FRESHMusicPlayer.Handlers.Configuration;
 using FRESHMusicPlayer.Handlers.Notifications;
-using Squirrel;
+//using Squirrel;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -11,7 +11,7 @@ using System.Windows;
 namespace FRESHMusicPlayer.Handlers
 {
     public class UpdateHandler
-    {
+    {/*
         private static readonly string rootPath;
         static UpdateHandler()
         {
@@ -70,6 +70,6 @@ namespace FRESHMusicPlayer.Handlers
         {
             Application.Current.Shutdown();
             Process.Start(Path.Combine(rootPath, "FRESHMusicPlayer.exe"));
-        }
+        }*/
     }
 }

@@ -112,7 +112,7 @@ namespace FRESHMusicPlayer
         }
         private async void Window_SourceInitialized(object sender, EventArgs e)
         {
-            UpdateIntegrations();
+            //UpdateIntegrations();
             ProcessSettings(true);
             var sb = new Storyboard();
             var doubleAnimation = new DoubleAnimation(0f, 1f, TimeSpan.FromSeconds(1));
@@ -121,7 +121,7 @@ namespace FRESHMusicPlayer
             sb.Children.Add(doubleAnimation);
             sb.Begin(ContentFrame);
             sb.Begin(MainBar);
-            await UpdateHandler.UpdateApp();
+            //await UpdateHandler.UpdateApp();
         }
         private void Window_Closed(object sender, EventArgs e)
         {
