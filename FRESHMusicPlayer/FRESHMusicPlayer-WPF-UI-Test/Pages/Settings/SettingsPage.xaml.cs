@@ -49,6 +49,9 @@ namespace FRESHMusicPlayer.Pages
                 case "pt":
                     General_LanguageCombo.SelectedIndex = (int)LanguageCombo.Portuguese;
                     break;
+                case "tr":
+                    General_LanguageCombo.SelectedIndex = (int)LanguageCombo.Turkish;
+                    break;
             }
             switch (App.Config.Theme)
             {
@@ -198,7 +201,7 @@ namespace FRESHMusicPlayer.Pages
             MessageBoxResult result = MessageBox.Show(Properties.Resources.SETTINGS_NUKE_LIBRARY_WARNING,
                                           "FRESHMusicPlayer",
                                           MessageBoxButton.YesNo,
-                                          MessageBoxImage.Warning);
+                                          MessageBoxImage.Warning, MessageBoxResult.No);
             if (result == MessageBoxResult.Yes) DatabaseUtils.Nuke();
         }
 
